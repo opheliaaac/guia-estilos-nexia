@@ -1,0 +1,218 @@
+$colPrimari: #3E3696;
+$colSecundari: #5266A8;
+$colAccent: #7CCDCE;
+$colFons: #f2f2f2;
+$colText: #121212;
+
+.ver-2 {
+  .logo-sq {
+    content: url(../../assets/img/logos/logo-2-sq.png);
+  }
+  .logo-h {
+    content: url(../../assets/img/logos/logo-2-h.png);
+  }
+
+  /*Guia colors*/
+
+  #c-primari {
+    background-color: $colPrimari;
+  }
+
+  #c-secundari {
+    background-color: $colSecundari;
+  }
+
+  #c-accent {
+    background-color: $colAccent;
+    color: $colText;
+    h3,
+    p {
+      color: $colText;
+    }
+  }
+
+  #c-fons {
+    color: $colText;
+    border: 1px #e1e1e1 solid;
+    background-color: $colFons;
+
+    h3,
+    p {
+      color: $colText;
+    }
+  } 
+
+  #c-text {
+    background-color: $colText;
+  }
+
+  /*
+  Headers paràgrafs i enllaços
+  */
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    color: $colSecundari;
+  }
+  h1 {
+    color: $colPrimari;
+  }
+
+  a {
+    color: $colSecundari;
+  }
+
+  a:hover,
+  .link-hover {
+    color: $colPrimari;
+  }
+
+  a:active,
+  .link-active {
+    color: $colAccent;
+  }
+
+  /* Botons */
+
+  button.primari,
+  .btn-primari-normal {
+    background: $colPrimari;
+    border-color: $colPrimari;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+    color: #ffffff;
+  }
+
+  button.primari:hover,
+  .btn-primari-hover {
+    background: #2f2970;
+    border-color: #2f2970;
+    box-shadow: 0 8px 12px -4px rgba(0, 0, 0, 0.25);
+    color: #ffffff;
+  }
+
+  button.primari:active,
+  .btn-primari-active {
+    background: #4e44bb;
+    border-color: #4e44bb;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+    color: #ffffff;
+  }
+
+  button.primari[disabled],
+  .btn-primari-disabled {
+    background: rgba(62, 54, 150, 0.25);
+    border-color: rgba(0, 0, 0, 0);
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.15);
+    color: #333333;
+  }
+
+  button.secundari,
+  .btn-secundari-normal {
+    background: $colSecundari;
+    border-color: $colSecundari;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+    color: #ffffff;
+  }
+
+  button.secundari:hover,
+  .btn-secundari-hover {
+    background: #415186;
+    border-color: #415186;
+    box-shadow: 0 8px 12px -4px rgba(0, 0, 0, 0.25);
+    color: #ffffff;
+  }
+
+  button.secundari:active,
+  .btn-secundari-active {
+    background: #7383ba;
+    border-color: #7383ba;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+    color: #ffffff;
+  }
+
+  button.secundari[disabled],
+  .btn-secundari-disabled {
+    background: rgba(82, 102, 168, 0.25);
+    border-color: rgba(0, 0, 0, 0);
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.15);
+    color: #333333;
+  }
+
+  button.accent,
+  .btn-accent-normal {
+    background: $colAccent;
+    border-color: $colAccent;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+    color: $colText;
+  }
+
+  button.accent:hover,
+  .btn-accent-hover {
+    background: #57bfc0;
+    border-color: #57bfc0;
+    box-shadow: 0 8px 12px -4px rgba(0, 0, 0, 0.25);
+    color: $colText;
+  }
+
+  button.accent:active,
+  .btn-accent-active {
+    background: #a1dbdc;
+    border-color: #a1dbdc;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+    color: $colText;
+  }
+
+  button.accent[disabled],
+  .btn-accent-disabled {
+    background: rgba(124, 205, 206, 0.25);
+    border-color: rgba(0, 0, 0, 0);
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.15);
+    color: #333333;
+  }
+
+  /*Forms*/
+
+  input:focus,
+  textarea:focus {
+    border-color: #837cd0;
+  }
+
+  fieldset {
+    border: 2px solid $colSecundari;
+  }
+
+  legend {
+    color: #fff;
+    background: $colPrimari;
+    border: 2px solid $colPrimari;
+  }
+
+  label {
+    color: $colPrimari;
+  }
+
+  input[type="radio"],
+  input[type="checkbox"] {
+    accent-color: $colPrimari;
+  }
+
+  select {
+    background-color: $colPrimari;
+    color: #fff;
+    border: 2px solid $colPrimari;
+  }
+
+  select option {
+    color: $colPrimari;
+  }
+
+  select option:checked,
+  select option:hover {
+    background-color: $colSecundari;
+    color: #fff;
+    font-weight: 600;
+  }
+}

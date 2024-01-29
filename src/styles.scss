@@ -1,1 +1,280 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Merriweather";
+  font-weight: 300;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/*
+  contenidors
+  */
+.contenidor {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/*
+  Headers paràgrafs i enllaços
+  */
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 800;
+}
+h1 {
+  font-size: 48px;
+  text-transform: uppercase;
+}
+h2 {
+  font-size: 36px;
+  text-transform: uppercase;
+}
+h3 {
+  font-size: 30px;
+  font-weight: 600;
+}
+h4 {
+  font-size: 24px;
+  font-weight: 600;
+}
+h5 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+p {
+  color: #111111;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+a {
+  font-style: normal;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+a:hover,
+.link-hover {
+  font-style: normal;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+a:active,
+.link-active {
+  font-style: normal;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+/* Botons */
+button {
+  border-color: rgba(0, 0, 0, 0);
+  border-radius: 4px;
+  border-style: solid;
+  border-width: 2px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  color: #ffffff;
+  font-family: "Work Sans";
+  font-size: 16px;
+  font-weight: 600;
+  padding: 16px 20px;
+}
+
+button:hover {
+  box-shadow: 0 8px 12px -4px rgba(0, 0, 0, 0.25);
+  font-style: normal;
+  font-weight: normal;
+}
+
+button:active {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+  font-style: normal;
+  font-weight: normal;
+}
+
+button[disabled] {
+  background: #dddddd;
+  border-color: rgba(0, 0, 0, 0);
+  border-style: none;
+  border-width: 0px;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+  color: #666666;
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* Forms */
+
+input,
+textarea {
+  background: #ffffff;
+  border-color: #ffffff;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: 0 1px 4px inset rgba(0, 0, 0, 0.2);
+  color: #111111;
+  font-family: "Merriweather";
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.5;
+  padding: 16px;
+  
+  &.success {
+    background: rgba(249, 224, 224, 0.05);
+    border-color: rgb(113, 206, 110);
+    border-width: 3px;
+    box-shadow: 0 1px 2px inset rgba(0, 0, 0, 0.15);
+  }
+}
+input:focus,
+textarea:focus {
+  background: #ffffff;
+  box-shadow: 0 1px 2px inset rgba(0, 0, 0, 0.15);
+}
+
+
+input.error,
+textarea.error {
+  background: rgba(249, 224, 224, 0.05);
+  border-color: rgba(239, 91, 89, 1);
+  border-width: 3px;
+  box-shadow: 0 1px 2px inset rgba(0, 0, 0, 0.15);
+}
+
+fieldset {
+  padding: 0;
+  width: 380px;
+  border-radius: 5px;
+
+  .radio, 
+  .checkbox {
+    padding: 20px;
+  }
+
+  .contenidor-radio,
+  .contenidor-checkbox {
+    padding: 25px 0;
+  }
+}
+
+legend {
+  font-family: 'Work Sans';
+  font-size: 22px;
+	margin: -2px;
+	width: 380px;
+	padding: 20px;
+	box-sizing: border-box;
+	border-radius: 10px 10px 0 0;
+	display: flex;
+}
+
+label {
+  font-family: 'Work Sans';
+  font-size: 18px;
+}
+
+input[type='radio'],
+input[type='checkbox'] {
+  transform: scale(1.5);
+  margin-right: 15px;
+}
+
+select {
+  border-radius: 5px;
+  width: 380px;
+  font-weight: 300;
+  padding: 20px;
+  cursor: pointer;
+  font-family: 'Work Sans';
+  font-size: 22px;
+  font-weight: 600;
+}
+
+select option {
+  background-color: #fff;
+  font-family: 'Work Sans';
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600!important;
+  border-radius: 5px;
+}
+
+
+/*Funcionalitats */
+.text-center {
+  text-align: center;
+}
+
+/* PROVES FONTS */
+
+.fuentes-2 {
+  font-family: "Lato";
+  font-weight: 300;
+  font-size: 18px;
+  h1,
+  h2,
+  h3 {
+    font-family: "Playfair Display";
+    font-weight: 600;
+  }
+}
+
+.fuentes-3 {
+  font-family: "Inter";
+  font-weight: 300;
+  h1,
+  h2,
+  h3 {
+    font-family: "Syne", sans-serif;
+    font-weight: 700;
+  }
+}
+
+.fuentes-4 {
+  font-family: "Lora";
+  font-weight: 300;
+  h1,
+  h2,
+  h3 {
+    font-family: "Oswald";
+    font-weight: 500;
+  }
+}
+
+.fuentes-5 {
+  font-family: "Roboto";
+  font-weight: 300;
+  h1,
+  h2,
+  h3 {
+    font-family: "Anton";
+  }
+}
+
+.fuentes-6 {
+  font-family: "Karma";
+  font-weight: 400;
+  h1,
+  h2,
+  h3 {
+    font-family: "Teko";
+    font-weight: 600;
+  }
+}

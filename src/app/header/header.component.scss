@@ -1,0 +1,24 @@
+.header{
+    position: sticky;
+    top: 1px;
+    background-color: #ebebeb;
+    display: flex;
+    gap: 10px;
+    padding: 20px 0;
+    margin: 0 0 50px 0;
+    justify-content: center;
+
+    button {
+        background-color: #3b3b3b;
+        color: white;
+        text-transform: uppercase;
+        border-radius: 6px;
+        border: none;
+        width: 200px;
+        height: 50px;
+
+        &:hover{
+            background-color: #0d0d0e; 
+        }
+    }
+}

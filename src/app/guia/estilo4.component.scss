@@ -1,0 +1,212 @@
+$colPrimari: #FE8F1F;
+$colSecundari: #FA5A1B;
+$colAccent: #007FA6;
+$colFons: #f2f2f2;
+$colText: #121212;
+
+.ver-4 {
+  .logo-sq {
+    content: url(../../assets/img/logos/logo-4-sq.png);
+  }
+  .logo-h {
+    content: url(../../assets/img/logos/logo-4-h.png);
+  }
+
+  /*Guia colors*/
+
+  #c-primari {
+    background-color: $colPrimari;
+  }
+
+  #c-secundari {
+    background-color: $colSecundari;
+  }
+
+  #c-accent {
+    background-color: $colAccent;
+  }
+
+  #c-fons {
+    color: #121212;
+    border: 1px #e1e1e1 solid;
+    background-color: $colFons;
+  }
+
+  #c-fons h3,
+  #c-fons p {
+    color: #121212;
+  }
+
+  #c-text {
+    background-color: $colText;
+  }
+
+  /*
+  Headers paràgrafs i enllaços
+  */
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    color: $colSecundari;
+  }
+  h1 {
+    color: $colPrimari;
+  }
+
+  a {
+    color: $colPrimari;
+  }
+
+  a:hover,
+  .link-hover {
+    color: $colAccent;
+  }
+
+  a:active,
+  .link-active {
+    color: $colSecundari;
+  }
+
+  /* Botons */
+
+  button.primari,
+  .btn-primari-normal {
+    background: $colPrimari;
+    border-color: $colPrimari;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+    color: #ffffff;
+  }
+
+  button.primari:hover,
+  .btn-primari-hover {
+    background: #e97601;
+    border-color: #e97601;
+    box-shadow: 0 8px 12px -4px rgba(0, 0, 0, 0.25);
+    color: #ffffff;
+  }
+
+  button.primari:active,
+  .btn-primari-active {
+    background: #fea852;
+    border-color: #fea852;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+    color: #ffffff;
+  }
+
+  button.primari[disabled],
+  .btn-primari-disabled {
+    background: rgba(254, 143, 31, 0.25);
+    border-color: rgba(0, 0, 0, 0);
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.15);
+    color: #333333;
+  }
+
+  button.secundari,
+  .btn-secundari-normal {
+    background: $colSecundari;
+    border-color: $colSecundari;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+    color: #ffffff;
+  }
+
+  button.secundari:hover,
+  .btn-secundari-hover {
+    background: #dd4205;
+    border-color: #dd4205;
+    box-shadow: 0 8px 12px -4px rgba(0, 0, 0, 0.25);
+    color: #ffffff;
+  }
+
+  button.secundari:active,
+  .btn-secundari-active {
+    background: #fb7e4d;
+    border-color: #fb7e4d;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+    color: #ffffff;
+  }
+
+  button.secundari[disabled],
+  .btn-secundari-disabled {
+    background: rgba(250, 90, 27, 0.25);
+    border-color: rgba(0, 0, 0, 0);
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.15);
+    color: #333333;
+  }
+
+  button.accent,
+  .btn-accent-normal {
+    background: $colAccent;
+    border-color: $colAccent;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+    color: #ffffff;
+  }
+
+  button.accent:hover,
+  .btn-accent-hover {
+    background: #005873;
+    border-color: #005873;
+    box-shadow: 0 8px 12px -4px rgba(0, 0, 0, 0.25);
+    color: #ffffff;
+  }
+
+  button.accent:active,
+  .btn-accent-active {
+    background: #00a6d9;
+    border-color: #00a6d9;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+    color: #ffffff;
+  }
+
+  button.accent[disabled],
+  .btn-accent-disabled {
+    background: rgba(0, 127, 166, 0.25);
+    border-color: rgba(0, 0, 0, 0);
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.15);
+    color: #333333;
+  }
+
+  /*Forms*/
+
+  input:focus,
+  textarea:focus {
+    border-color: #f5ad65;
+  }
+
+  fieldset {
+    border: 2px solid $colSecundari;
+  }
+
+  legend {
+    color: #fff;
+    background: $colPrimari;
+    border: 2px solid $colPrimari;
+  }
+
+  label {
+    color: $colSecundari;
+  }
+
+  input[type="radio"],
+  input[type="checkbox"] {
+    accent-color: $colSecundari;
+  }
+
+  select {
+    background-color: $colPrimari;
+    color: #fff;
+    border: 2px solid $colPrimari;
+  }
+
+  select option {
+    color: $colSecundari;
+  }
+
+  select option:checked,
+  select option:hover {
+    background-color: $colSecundari;
+    color: #fff;
+  }
+}
